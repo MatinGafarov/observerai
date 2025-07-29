@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObserverAI</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar-links">
+        <li><a href="#hero" class="active">Main Page</a></li>
+        <li><a href="explore.html">Explore Categories</a></li>
+        <li><a href="leaders.html">Explore Leaders</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="chat.html">Chat With AI</a></li>
+        
+        <!-- Profile always last before login/register -->
+        <li class="navbar-profile">
+            <a href="profile.html">
+                <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+            </a>
+        </li>
+        <!-- Add Login/Register links to right -->
+        <li class="navbar-auth"><a href="login.html">Login</a></li>
+        <li class="navbar-auth"><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+    <main>
+        <section class="hero" id="hero">
+            <h1 class="hero-title--blc">AI-Powered Leader Wisdom</h1>
+            <h1 class="hero-title">Inner Clarity with You Wherever You Are.</h1>
+
+            <div class="hero-image">
+                <img src="src/assets/images/image.png" alt="Hero Image">
+                <div class="overlay-text">OBSERVER AI</div>
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>20+</h3>
+                    <p>AI Leaders.</p>
+                </div>
+                <div class="stat-box">
+                    <h3>3M+</h3>
+                    <p>Cumulative Reach.</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1000+</h3>
+                    <p>Upcoming Leaders.</p>
+                </div>
+            </div>
+            <blockquote class="testimonial">
+                "OBSERVER became the missing link between my content and my audience. Simple, powerful, and truly
+                supportive."
+                <span class="testimonial-author">Meli, Wellbeing Mentor</span>
+            </blockquote>
+        </section>
+
+        <section class="categories" id="categories">
+            <h2>Featured Categories</h2>
+            <p class="subtitle">Explore Your Needs.</p>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories1.png" alt="Spiritual & Esoteric Practices">
+                    <h3>Spiritual & Esoteric Practices.</h3>
+                    <p class="category-desc">
+                        <strong>Astrology, Tarot Reading, Esotericism, and Spiritual Counseling</strong> invite you to
+                        deepen your spiritual awareness and awaken intuition through ancient tools and sacred guidance.
+                    </p>
+                </div>
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 2.png" alt="Mindfulness & Psychology">
+                    <h3>Mindfulness & Psychology.</h3>
+                    <p class="category-desc">
+                        <strong>Mindfulness, Psychology, Somatic Awareness, and Art Therapy</strong> offer space to
+                        soften the mind, meet your emotions, and reconnect with embodied presence.
+                    </p>
+                </div>
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 3.png" alt="Body & Movement Healing">
+                    <h3>Body & Movement Healing.</h3>
+                    <p class="category-desc">
+                        <strong>Yoga, Pilates, Personal Training, and Holistic Wellness</strong> guide you to ground in
+                        your body and awaken your natural flow of vitality.
+                    </p>
+                </div>
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 4.png" alt="Coaching & Personal Growth">
+                    <h3>Coaching & Personal Growth.</h3>
+                    <p class="category-desc">
+                        <strong>Life Coaching, Motivational Speaking, and Public Speaking</strong> help you align with
+                        your inner compass and move forward with clarity and confidence.
+                    </p>
+                </div>
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 5.png" alt="Creative Ritual Arts">
+                    <h3>Creative Ritual Arts.</h3>
+                    <p class="category-desc">
+                        <strong>Spiritual Art, Movement Arts, and Art Therapy</strong> invite you to express the soul
+                        through ritual, creativity, and embodied storytelling.
+                    </p>
+                </div>
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 6.png" alt="Earth Skills & Ancestral Wisdom">
+                    <h3>Earth Skills & Ancestral Wisdom.</h3>
+                    <p class="category-desc">
+                        <strong>Outdoor Skills, Survival Practices, and Ancient Beauty</strong> reconnect you with the
+                        Earth's wisdom and ancestral ways of living in harmony.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Pricing</h2>
+            <p class="subtitle">Choose Your Path.</p>
+            <div class="pricing-cards">
+                <div class="pricing-card basic">
+                    <h3>Basic</h3>
+                    <div class="price">$3/mo</div>
+                    <ul>
+                        <li>Access to monthly AI guides</li>
+                        <li>Ask 5 questions per day</li>
+                        <li>Access limited to 1 leader at a time</li>
+                    </ul>
+                    <button onclick="window.location.href='subscribe.html'">Subscribe</button>
+
+                </div>
+                <div class="pricing-card pro">
+                    <h3>Pro</h3>
+                    <div class="price">$9/mo</div>
+                    <ul>
+                        <li>Access to monthly AI guides</li>
+                        <li>Ask 50 questions per day</li>
+                        <li>Can switch between leaders <br>&nbsp</li>
+                    </ul>
+                    <button onclick="window.location.href='subscribe.html'">Subscribe</button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Monthly ritual inspiration.</h2>
+            <p>Join our newsletter for insights.</p>
+            <form>
+                <input type="email" placeholder="name@fromer.com" required>
+                <button type="submit">Enter your email</button>
+            </form>
+        </section>
+
+        <section class="faq">
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">+</span>
+                    How does the Observer AI work?
+                </button>
+                <div class="faq-answer">
+                    Each AI Leader is a digital replica inspired by the wisdom and style of real spiritual guides. They
+                    offer daily support, emotional insight, and personalized rituals — available 24/7. You can explore
+                    their depth of knowledge through themed conversations, reflections, and responses tailored to your
+                    journey.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">+</span>
+                    Can I cancel anytime?
+                </button>
+                <div class="faq-answer">
+                    Yes. You can cancel your subscription at any time. There are no long-term commitments, and you’ll
+                    retain access until the end of your billing cycle.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span class="faq-icon">+</span>
+                    What’s inside each ritual set?
+                </button>
+                <div class="faq-answer">
+                    Each AI Leader provides: <br>
+
+                    1) Instant access to their wisdom archive and unique voice <br>
+                    2) Personalized answers to emotional, spiritual, and life questions <br>
+                    3) Monthly rituals, themed practices, or reflections <br>
+                    4) Evolving interactions shaped by your ongoing input <br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

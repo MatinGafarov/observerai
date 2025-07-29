@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe | ObserverAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/subscribe.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="explore.html">Explore Categories</a></li>
+            <li><a href="leaders.html">Explore Leaders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="chat.html">Chat With AI</a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li class="navbar-auth"><a href="login.html" id="login-link">Login</a></li>
+            <li class="navbar-auth"><a href="register.html" id="register-link">Register</a></li>
+            <li class="navbar-profile" id="profile-link" style="display:none;">
+                <a href="profile.html">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="subscribe-section">
+            <h2>Subscribe to ObserverAI</h2>
+            <form class="subscribe-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="name@fromer.com" required>
+                
+                <label for="plan">Choose your plan:</label>
+                <select id="plan" required>
+                    <option value="" disabled selected>Select a plan</option>
+                    <option value="basic">Basic - $3/mo</option>
+                    <option value="pro">Pro - $9/mo</option>
+                </select>
+                
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Navbar login/profile toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        var loggedIn = localStorage.getItem('loggedIn');
+        if(loggedIn === 'true') {
+            document.getElementById('profile-link').style.display = 'block';
+            document.getElementById('login-link').style.display = 'none';
+            document.getElementById('register-link').style.display = 'none';
+        } else {
+            document.getElementById('profile-link').style.display = 'none';
+            document.getElementById('login-link').style.display = 'block';
+            document.getElementById('register-link').style.display = 'block';
+        }
+    });
+    </script>
+</body>
+</html>
