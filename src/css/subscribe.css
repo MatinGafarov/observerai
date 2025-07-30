@@ -1,73 +1,118 @@
-/* Add to src/css/main.css or src/css/style.css for subscribe page style */
+/* --- Subscribe Page Modern Style & Animation --- */
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #e0dac3 100%);
+    color: #222;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.4s;
+}
 .subscribe-section {
-    margin: 80px auto 0 auto;
-    max-width: 420px;
+    margin: 90px auto 0 auto;
+    max-width: 440px;
     background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-    padding: 44px 36px 36px 36px;
+    border-radius: 22px;
+    box-shadow: 0 4px 32px rgba(156,169,130,0.10);
+    padding: 54px 38px 38px 38px;
     text-align: center;
+    animation: fadeInUp 1s;
 }
-
-.subscribe-title {
-    font-size: 2rem;
+.subscribe-section h2 {
+    font-size: 2.2rem;
     font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 24px;
-    font-family: 'Inter', sans-serif;
+    color: #9CA982;
+    margin-bottom: 28px;
+    font-family: 'Inter',sans-serif;
+    letter-spacing: 0.02em;
+    animation: fadeIn 1.2s;
 }
-
 .subscribe-form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 22px;
+    margin-bottom: 18px;
+    animation: scaleIn 0.8s;
 }
-
+.subscribe-form label {
+    text-align: left;
+    color: #9CA982;
+    font-weight: 600;
+    font-size: 1.08rem;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    animation: fadeIn 1.1s;
+}
 .subscribe-form input,
 .subscribe-form select {
-    padding: 13px;
-    border-radius: 8px;
+    padding: 16px;
+    border-radius: 10px;
     border: 1.5px solid #eae4c8;
-    font-size: 1rem;
+    font-size: 1.08rem;
     background: #f8f6ec;
     color: #222;
-    transition: border 0.2s;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(156,169,130,0.07);
 }
-
 .subscribe-form input:focus,
 .subscribe-form select:focus {
     border: 1.5px solid #9CA982;
     outline: none;
+    box-shadow: 0 4px 16px rgba(156,169,130,0.12);
     background: #fff;
 }
-
 .subscribe-form button {
-    background: linear-gradient(90deg, #9CA982 0%, #1a1a1a 100%);
+    background: linear-gradient(90deg,#9CA982 0%,#1a1a1a 100%);
     color: #fff;
     border: none;
-    border-radius: 8px;
-    padding: 13px 0;
-    font-size: 1.08rem;
+    border-radius: 10px;
+    padding: 18px 0;
+    font-size: 1.18rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(156,169,130,0.08);
     margin-top: 8px;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-
 .subscribe-form button:hover {
-    background: linear-gradient(90deg, #1a1a1a 0%, #9CA982 100%);
+    background: linear-gradient(90deg,#1a1a1a 0%,#9CA982 100%);
+    box-shadow: 0 8px 32px rgba(156,169,130,0.16);
+    transform: translateY(-2px) scale(1.03);
 }
-
 .subscribe-note {
-    margin-top: 18px;
+    margin-top: 22px;
     color: #888;
-    font-size: 1rem;
+    font-size: 1.12rem;
+    animation: fadeIn 1.4s;
 }
 
+/* --- Animations --- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+/* --- Responsive --- */
 @media (max-width: 700px) {
     .subscribe-section {
         max-width: 98vw;
-        padding: 32px 12px 24px 12px;
+        padding: 24px 8px 18px 8px;
+    }
+    .subscribe-section h2 {
+        font-size: 1.3rem;
+    }
+    .subscribe-form button {
+        font-size: 1rem;
+        padding: 14px 0;
+    }
+    .subscribe-note {
+        font-size: 1rem;
     }
 }
