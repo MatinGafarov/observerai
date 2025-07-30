@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Subscribe | ObserverAI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+    <title>Contact | ObserverAI</title>
     <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/subscribe.css">
+    <link rel="stylesheet" href="src/css/contact.css">
     <link rel="stylesheet" href="src/css/animations.css">
 </head>
-
 <body>
     <nav class="navbar">
         <div class="navbar-mobile-toggle" id="navbarToggle">
@@ -22,7 +18,7 @@
             <li><a href="index.html">Main Page</a></li>
             <li><a href="explore.html">Explore Categories</a></li>
             <li><a href="leaders.html">Explore Leaders</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
             <li><a href="chat.html">Chat With AI</a></li>
             <li class="navbar-profile">
                 <a href="profile.html">
@@ -34,24 +30,20 @@
         </ul>
     </nav>
     <main>
-        <section class="subscribe-section">
-            <h2>Subscribe to ObserverAI</h2>
-            <form class="subscribe-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="name@fromer.com" required>
-
-                <label for="plan">Choose your plan:</label>
-                <select id="plan" required>
-                    <option value="" disabled selected>Select a plan</option>
-                    <option value="basic">Basic - $3/mo</option>
-                    <option value="pro">Pro - $9/mo</option>
-                </select>
-
-                <button type="submit">Subscribe</button>
+        <section class="contact-section scroll-fade-in">
+            <h2 class="contact-title">Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required rows="5"></textarea>
+                <button type="submit">Send Message</button>
             </form>
+            <div class="contact-note">
+                We'll get back to you within 24 hours.
+            </div>
         </section>
     </main>
-    <!-- #region Footer -->
+     <!-- #region Footer -->
 <footer>
     <div class="footer-links">
         <div class="footer-social">
@@ -93,22 +85,6 @@
     </div>
 </footer>
    <!-- #endregion -->
-    
-    <script>
-        // Navbar login/profile toggle
-        document.addEventListener('DOMContentLoaded', function () {
-            var loggedIn = localStorage.getItem('loggedIn');
-            if (loggedIn === 'true') {
-                document.getElementById('profile-link').style.display = 'block';
-                document.getElementById('login-link').style.display = 'none';
-                document.getElementById('register-link').style.display = 'none';
-            } else {
-                document.getElementById('profile-link').style.display = 'none';
-                document.getElementById('login-link').style.display = 'block';
-                document.getElementById('register-link').style.display = 'block';
-            }
-        });
-    </script>
+    <script src="src/js/script.js"></script>
 </body>
-
 </html>

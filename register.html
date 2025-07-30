@@ -5,22 +5,27 @@
     <title>Register | ObserverAI</title>
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animations.css">
 </head>
 <body>
-     <nav class="navbar">
-    <ul class="navbar-links">
+<nav class="navbar">
+    <div class="navbar-mobile-toggle" id="navbarToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navbar-links" id="navbarLinks">
         <li><a href="index.html">Main Page</a></li>
         <li><a href="explore.html">Explore Categories</a></li>
-        <li><a href="leaders.html" >Explore Leaders</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="leaders.html">Explore Leaders</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="chat.html">Chat With AI</a></li>
         <li class="navbar-profile">
             <a href="profile.html">
                 <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
             </a>
         </li>
-        <li class="navbar-auth"><a href="login.html" >Login</a></li>
+        <li class="navbar-auth"><a href="login.html">Login</a></li>
         <li class="navbar-auth"><a href="register.html" class="active">Register</a></li>
     </ul>
 </nav>
@@ -41,5 +46,47 @@
         </section>
       </div>
    </div>
+    <!-- #region Footer -->
+<footer>
+    <div class="footer-links">
+        <div class="footer-social">
+            <h4>Social Media</h4>
+            <ul>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/instagram-svgrepo-com.svg" alt="Instagram" class="footer-icon"> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/tiktok-svgrepo-com.svg" alt="TikTok" class="footer-icon"> TikTok
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/facebook-svgrepo-com.svg" alt="Facebook" class="footer-icon"> Facebook
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Who We Are</a></li>
+            </ul>
+        </div>
+        <div class="footer-explore">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+   <!-- #endregion -->
 </body>
 </html>

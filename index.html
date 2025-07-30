@@ -7,35 +7,36 @@
     <title>ObserverAI</title>
     <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
-
+    <link rel="stylesheet" href="src/css/animations.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul class="navbar-links">
-        <li><a href="#hero" class="active">Main Page</a></li>
-        <li><a href="explore.html">Explore Categories</a></li>
-        <li><a href="leaders.html">Explore Leaders</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
-        <li><a href="chat.html">Chat With AI</a></li>
-        
-        <!-- Profile always last before login/register -->
-        <li class="navbar-profile">
-            <a href="profile.html">
-                <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
-            </a>
-        </li>
-        <!-- Add Login/Register links to right -->
-        <li class="navbar-auth"><a href="login.html">Login</a></li>
-        <li class="navbar-auth"><a href="register.html">Register</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="navbar-mobile-toggle" id="navbarToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="index.html" class="active">Main Page</a></li>
+            <li><a href="explore.html">Explore Categories</a></li>
+            <li><a href="leaders.html">Explore Leaders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    
+            <li><a href="chat.html">Chat With AI</a></li>
+            <li class="navbar-profile">
+                <a href="profile.html">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                </a>
+            </li>
+            <li class="navbar-auth"><a href="login.html">Login</a></li>
+            <li class="navbar-auth"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="hero" id="hero">
             <h1 class="hero-title--blc">AI-Powered Leader Wisdom</h1>
             <h1 class="hero-title">Inner Clarity with You Wherever You Are.</h1>
-
             <div class="hero-image">
                 <img src="src/assets/images/image.png" alt="Hero Image">
                 <div class="overlay-text">OBSERVER AI</div>
@@ -129,7 +130,6 @@
                         <li>Access limited to 1 leader at a time</li>
                     </ul>
                     <button onclick="window.location.href='subscribe.html'">Subscribe</button>
-
                 </div>
                 <div class="pricing-card pro">
                     <h3>Pro</h3>
@@ -137,10 +137,9 @@
                     <ul>
                         <li>Access to monthly AI guides</li>
                         <li>Ask 50 questions per day</li>
-                        <li>Can switch between leaders <br>&nbsp</li>
+                        <li>Can switch between leaders <br>&nbsp;</li>
                     </ul>
                     <button onclick="window.location.href='subscribe.html'">Subscribe</button>
-
                 </div>
             </div>
         </section>
@@ -184,7 +183,6 @@
                 </button>
                 <div class="faq-answer">
                     Each AI Leader provides: <br>
-
                     1) Instant access to their wisdom archive and unique voice <br>
                     2) Personalized answers to emotional, spiritual, and life questions <br>
                     3) Monthly rituals, themed practices, or reflections <br>
@@ -193,27 +191,52 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-links">
-            <div>
-                <h4>About</h4>
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Explore</h4>
-                <ul>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
+    <!-- #region Footer -->
+<footer>
+    <div class="footer-links">
+        <div class="footer-social">
+            <h4>Social Media</h4>
+            <ul>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/instagram-svgrepo-com.svg" alt="Instagram" class="footer-icon"> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/tiktok-svgrepo-com.svg" alt="TikTok" class="footer-icon"> TikTok
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-icon-link">
+                        <img src="src/assets/images/facebook-svgrepo-com.svg" alt="Facebook" class="footer-icon"> Facebook
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>
-    <script src="src/js/script.js"></script>
+        <div class="footer-about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Who We Are</a></li>
+            </ul>
+        </div>
+        <div class="footer-explore">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+   <!-- #endregion -->
+   <button id="scrollToTopBtn" title="Go to top">
+    ↑
+</button>
+<script src="src/js/script.js"></script>
 </body>
 
 </html>

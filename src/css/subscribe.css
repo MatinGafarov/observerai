@@ -1,1 +1,73 @@
+/* Add to src/css/main.css or src/css/style.css for subscribe page style */
+.subscribe-section {
+    margin: 80px auto 0 auto;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 44px 36px 36px 36px;
+    text-align: center;
+}
 
+.subscribe-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+    padding: 13px;
+    border-radius: 8px;
+    border: 1.5px solid #eae4c8;
+    font-size: 1rem;
+    background: #f8f6ec;
+    color: #222;
+    transition: border 0.2s;
+}
+
+.subscribe-form input:focus,
+.subscribe-form select:focus {
+    border: 1.5px solid #9CA982;
+    outline: none;
+    background: #fff;
+}
+
+.subscribe-form button {
+    background: linear-gradient(90deg, #9CA982 0%, #1a1a1a 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 0;
+    font-size: 1.08rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(156,169,130,0.08);
+    margin-top: 8px;
+}
+
+.subscribe-form button:hover {
+    background: linear-gradient(90deg, #1a1a1a 0%, #9CA982 100%);
+}
+
+.subscribe-note {
+    margin-top: 18px;
+    color: #888;
+    font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+    .subscribe-section {
+        max-width: 98vw;
+        padding: 32px 12px 24px 12px;
+    }
+}
