@@ -1,17 +1,10 @@
-/* --- Chat Page Modern Style & Animation --- */
-body {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #e0dac3 100%);
-    margin: 0;
-    color: #222;
-    min-height: 100vh;
-    transition: background 0.4s;
-}
+@import url(./components/root.css);
+
 .chat-section {
     max-width: 600px;
     margin: 60px auto 30px auto;
     background: #fff;
-    border-radius: 22px;
+    border-radius: 8px;
     padding: 38px 28px;
     box-shadow: 0 4px 32px rgba(156,169,130,0.10);
     animation: fadeInUp 1s;
@@ -27,7 +20,7 @@ body {
 }
 .chat-window {
     background: #f8f6ec;
-    border-radius: 14px;
+    border-radius: 8px;
     min-height: 250px;
     max-height: 350px;
     overflow-y: auto;
@@ -50,7 +43,7 @@ body {
     text-align: right;
     color: #222;
     background: linear-gradient(90deg, #e0dac3 0%, #fff 100%);
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 8px 14px;
     display: inline-block;
     margin-left: 40px;
@@ -60,7 +53,7 @@ body {
     text-align: left;
     color: #7d7d7d;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 8px 14px;
     display: inline-block;
     margin-right: 40px;
@@ -91,7 +84,7 @@ body {
     background: linear-gradient(90deg,#9CA982 0%,#1a1a1a 100%);
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 14px 28px;
     font-size: 1.18rem;
     font-weight: 700;

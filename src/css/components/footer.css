@@ -1,0 +1,154 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer, .footer2 {
+  flex-shrink: 0;
+}
+
+.footer2 {
+  background: #fcf9f3; 
+  font-family: Inter, sans-serif;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  color: #232c23;
+}
+
+.footer2-top {
+  padding: 56px 60px 0 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer2-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7vw;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer2-col {
+  min-width: 160px;
+  flex: 1 1 160px;
+  margin-bottom: 24px;
+}
+
+.footer2-col h4 {
+  margin: 0 0 18px 0;
+  font-size: 1.09rem;
+  font-weight: 700;
+  color: #232c23;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.footer2-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer2-col ul li {
+  margin-bottom: 13px;
+}
+
+.footer2-col ul li a {
+  text-decoration: none;
+  color: #5a665a;
+  font-size: 1.02rem;
+  font-weight: 500;
+  transition: color 0.2s, letter-spacing 0.2s;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+  padding: 2px 4px;
+  display: inline-block;
+}
+
+.footer2-col ul li a:hover {
+  color: #688868;
+  background: #f5eedd;
+  letter-spacing: 0.07em;
+}
+
+.footer2-divider {
+  border: none;
+  border-top: 1.5px solid #e5dbc6;
+  margin: 52px 60px 0 60px;
+}
+
+.footer2-bottom {
+  padding: 32px 60px 0 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer2-links {
+  display: flex;
+  gap: 38px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer2-links li a {
+  color: #5a665a;
+  text-decoration: none;
+  font-size: 1.01rem;
+  font-weight: 500;
+  transition: color 0.18s, border-bottom 0.18s;
+  border-bottom: 2.5px solid transparent;
+  padding-bottom: 2px;
+}
+
+.footer2-links li a:hover {
+  color: #425942;
+  border-bottom: 2.5px solid #e5dbc6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer2-cols {
+    gap: 34px;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer2-cols {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer2-cols {
+    flex-direction: column;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .footer2-top,
+  .footer2-divider,
+  .footer2-bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer2-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+}

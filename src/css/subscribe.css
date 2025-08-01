@@ -1,17 +1,10 @@
-/* --- Subscribe Page Modern Style & Animation --- */
-body {
-    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #e0dac3 100%);
-    color: #222;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    transition: background 0.4s;
-}
+@import url(./components/root.css);
+
 .subscribe-section {
     margin: 90px auto 0 auto;
     max-width: 440px;
     background: #fff;
-    border-radius: 22px;
+    border-radius: 8px;
     box-shadow: 0 4px 32px rgba(156,169,130,0.10);
     padding: 54px 38px 38px 38px;
     text-align: center;
@@ -64,7 +57,7 @@ body {
     background: linear-gradient(90deg,#9CA982 0%,#1a1a1a 100%);
     color: #fff;
     border: none;
-    border-radius: 10px;
+     border-radius: 8px;
     padding: 18px 0;
     font-size: 1.18rem;
     font-weight: 700;

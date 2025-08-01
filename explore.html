@@ -1,83 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Explore Leaders | ObserverAI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/explore.css">
-    <link rel="stylesheet" href="src/css/animations.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="navbar-mobile-toggle" id="navbarToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="navbar-links" id="navbarLinks">
-        <li><a href="index.html">Main Page</a></li>
-        <li><a href="explore.html" class="active">Explore Categories</a></li>
-        <li><a href="leaders.html">Explore Leaders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="chat.html">Chat With AI</a></li>
-        <li class="navbar-profile">
-            <a href="profile.html">
-                <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
-            </a>
-        </li>
-        <li class="navbar-auth"><a href="login.html">Login</a></li>
-        <li class="navbar-auth"><a href="register.html">Register</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="navbar-mobile-toggle" id="navbarToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="explore.html">Explore Leaders & Categories
+</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li><a href="chat.html">Chat With AI</a></li>
+            <li class="navbar-profile">
+                <a href="profile.html">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                </a>
+            </li>
+            <li class="navbar-auth"><a href="login.html">Login</a></li>
+            <li class="navbar-auth"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2 class="explore-title">Explore Categories</h2>
-        <div class="leaders-grid" id="leadersGrid"></div>
+        <header class="page-header">
+            <h1 class="explore-title">Explore Leaders & Categories</h1>
+            <p class="page-subtitle">Discover AI-powered wisdom from diverse thought leaders and explore specialized categories for your personal growth journey.</p>
+        </header>
+        
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2 class="section-title">Featured Categories</h2>
+            <p class="section-subtitle">Explore Your Needs.</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories1.png" alt="Spiritual & Esoteric Practices" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Spiritual & Esoteric Practices</h3>
+                        <p class="category-desc">Astrology, Tarot Reading, Esotericism, and Spiritual Counseling invite you to deepen your spiritual awareness.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 2.png" alt="Mindfulness & Psychology" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Mindfulness & Psychology</h3>
+                        <p class="category-desc">Mindfulness, Psychology, Somatic Awareness, and Art Therapy offer space to soften the mind and meet your emotions.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 3.png" alt="Body & Movement Healing" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Body & Movement Healing</h3>
+                        <p class="category-desc">Yoga, Pilates, Personal Training, and Holistic Wellness guide you to ground in your body and awaken vitality.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 4.png" alt="Coaching & Personal Growth" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Coaching & Personal Growth</h3>
+                        <p class="category-desc">Life Coaching, Motivational Speaking, and Public Speaking help you align with your inner compass and move forward.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 5.png" alt="Creative Ritual Arts" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Creative Ritual Arts</h3>
+                        <p class="category-desc">Spiritual Art, Movement Arts, and Art Therapy invite you to express the soul through ritual and creativity.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="src/assets/images/Featured Categories 6.png" alt="Earth Skills & Ancestral Wisdom" class="category-image">
+                    <div class="category-content">
+                        <h3 class="category-title">Earth Skills & Ancestral Wisdom</h3>
+                        <p class="category-desc">Outdoor Skills, Survival Practices, and Ancient Beauty reconnect you with the Earth's wisdom and ancestral ways.</p>
+                        <a href="#" class="category-link">Explore Category</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Leaders Section -->
+        <section class="leaders-section">
+            <h2 class="section-title">Featured Leaders</h2>
+            <p class="section-subtitle">Connect with AI wisdom guides across various disciplines.</p>
+            
+            <div class="leaders-filter">
+                <button class="filter-button active" data-filter="all">All Leaders</button>
+                <button class="filter-button" data-filter="spiritual">Spiritual</button>
+                <button class="filter-button" data-filter="mindfulness">Mindfulness</button>
+                <button class="filter-button" data-filter="movement">Movement</button>
+                <button class="filter-button" data-filter="coaching">Coaching</button>
+                <button class="filter-button" data-filter="creative">Creative Arts</button>
+            </div>
+            
+            <div class="leaders-grid" id="leadersGrid">
+                <!-- Leader cards will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
     </main>
-        <!-- #region Footer -->
-<footer>
-    <div class="footer-links">
-        <div class="footer-social">
-            <h4>Social Media</h4>
-            <ul>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/instagram-svgrepo-com.svg" alt="Instagram" class="footer-icon"> Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/tiktok-svgrepo-com.svg" alt="TikTok" class="footer-icon"> TikTok
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/facebook-svgrepo-com.svg" alt="Facebook" class="footer-icon"> Facebook
-                    </a>
-                </li>
+    <!-- #region Footer -->
+    <footer class="footer2">
+        <div class="footer2-top">
+            <div class="footer2-cols">
+                <div class="footer2-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Popup Builder</a></li>
+                        <li><a href="#">Web-design</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Use Cases</h4>
+                    <ul>
+                        <li><a href="#">Web-designers</a></li>
+                        <li><a href="#">Marketers</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Themes</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="footer2-divider">
+        <div class="footer2-bottom">
+            <ul class="footer2-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
             </ul>
         </div>
-        <div class="footer-about">
-            <h4>About</h4>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Who We Are</a></li>
-            </ul>
-        </div>
-        <div class="footer-explore">
-            <h4>Explore</h4>
-            <ul>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-   <!-- #endregion -->
-<script src="src/js/script.js"></script>
-    <script src="src/js/leaders.js"></script>
+    </footer>
+    <!-- #endregion -->
+    <script src="src/js/script.js"></script>
+   
 </body>
+
 </html>

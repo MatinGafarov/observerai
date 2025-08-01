@@ -1,93 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Profile | ObserverAI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/profile.css">
-    <link rel="stylesheet" href="src/css/animations.css">
 </head>
+
 <body>
-<nav class="navbar">
-    <div class="navbar-mobile-toggle" id="navbarToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ul class="navbar-links" id="navbarLinks">
-        <li><a href="index.html">Main Page</a></li>
-        <li><a href="explore.html">Explore Categories</a></li>
-        <li><a href="leaders.html">Explore Leaders</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="chat.html">Chat With AI</a></li>
-        <li class="navbar-profile">
-            <a href="profile.html">
-                <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
-            </a>
-        </li>
-        <li class="navbar-auth"><a href="login.html">Login</a></li>
-        <li class="navbar-auth"><a href="register.html">Register</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <div class="navbar-mobile-toggle" id="navbarToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="explore.html">Explore Leaders & Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="chat.html">Chat With AI</a></li>
+            <li class="navbar-profile">
+                <a href="profile.html" class="active">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                </a>
+            </li>
+            <li class="navbar-auth"><a href="login.html">Login</a></li>
+            <li class="navbar-auth"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    
     <main>
-        <div class="profile-container" >
-            <div class="profile-image" class="active">
-                <img src="src/assets/images/ferhad.jpg" alt="User Profile" >
-            </div>
-            <div class="profile-details">
-                <div><span class="label">Name:</span> <span class="value bold">Rock Griffe</span></div>
-                <div><span class="label">Birth Date:</span> <span class="value bold">01/12/1994</span></div>
-                <div><span class="label">Gender:</span> <span class="value bold">Male</span></div>
-                <div><span class="label">Subscription Status:</span> <span class="value bold">Basic</span></div>
-                <div><a href="#" class="action upgrade">Upgrade Plan</a></div>
-                <div><a href="#" class="action delete">Delete My Data</a></div>
+        <div class="container">
+            <h1 class="page-title">Your Profile</h1>
+            
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-image-container">
+                        <img src="src/assets/images/ferhad.jpg" alt="User Profile" class="profile-image">
+                        <div class="profile-image-overlay">
+                            <button class="change-photo-btn">Change Photo</button>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">AI Chats</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-label">Favorites</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Days Active</span>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-subscription">
+                        <div class="subscription-badge basic">
+                            Basic Plan
+                        </div>
+                        <a href="subscribe.html" class="upgrade-button">Upgrade to Pro</a>
+                    </div>
+                </div>
+                
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h2 class="section-title">Personal Information</h2>
+                        <div class="profile-info">
+                            <div class="info-group">
+                                <label class="info-label">Name</label>
+                                <div class="info-value">Rock Griffe</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Birth Date</label>
+                                <div class="info-value">01/12/1994</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Gender</label>
+                                <div class="info-value">Male</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Email</label>
+                                <div class="info-value">rock.griffe@example.com</div>
+                            </div>
+                        </div>
+                        <button class="edit-button">Edit Information</button>
+                    </div>
+                    
+                    <div class="profile-section">
+                        <h2 class="section-title">Subscription Details</h2>
+                        <div class="profile-info">
+                            <div class="info-group">
+                                <label class="info-label">Current Plan</label>
+                                <div class="info-value">Basic</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Billing Cycle</label>
+                                <div class="info-value">Monthly</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Next Billing Date</label>
+                                <div class="info-value">August 15, 2025</div>
+                            </div>
+                            <div class="info-group">
+                                <label class="info-label">Daily Questions</label>
+                                <div class="info-value">5 questions per day</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-section">
+                        <h2 class="section-title">Account Management</h2>
+                        <div class="account-actions">
+                            <button class="action-button change-password">Change Password</button>
+                            <button class="action-button delete-account">Delete My Account</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-      <!-- #region Footer -->
-<footer>
-    <div class="footer-links">
-        <div class="footer-social">
-            <h4>Social Media</h4>
-            <ul>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/instagram-svgrepo-com.svg" alt="Instagram" class="footer-icon"> Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/tiktok-svgrepo-com.svg" alt="TikTok" class="footer-icon"> TikTok
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-icon-link">
-                        <img src="src/assets/images/facebook-svgrepo-com.svg" alt="Facebook" class="footer-icon"> Facebook
-                    </a>
-                </li>
+    
+    <footer class="footer2">
+        <div class="footer2-top">
+            <div class="footer2-cols">
+                <div class="footer2-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Popup Builder</a></li>
+                        <li><a href="#">Web-design</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Use Cases</h4>
+                    <ul>
+                        <li><a href="#">Web-designers</a></li>
+                        <li><a href="#">Marketers</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Themes</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="footer2-divider">
+        <div class="footer2-bottom">
+            <ul class="footer2-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
             </ul>
         </div>
-        <div class="footer-about">
-            <h4>About</h4>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Who We Are</a></li>
-            </ul>
-        </div>
-        <div class="footer-explore">
-            <h4>Explore</h4>
-            <ul>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-   <!-- #endregion -->
+    </footer>
+    
     <script src="src/js/script.js"></script>
 </body>
+
 </html>

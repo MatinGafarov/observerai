@@ -1,4 +1,4 @@
-// Navbar scroll spy for section highlighting
+
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("main section[id]");
     const navLinks = document.querySelectorAll(".navbar-links a");
@@ -89,3 +89,221 @@ document.addEventListener("DOMContentLoaded", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById('modernNavbarToggle');
+    const links = document.getElementById('modernNavbarLinks');
+    burger.addEventListener('click', () => {
+      links.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+  });
+        document.addEventListener('DOMContentLoaded', function () {
+            var loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn === 'true') {
+                document.getElementById('profile-link').style.display = 'block';
+                document.getElementById('login-link').style.display = 'none';
+                document.getElementById('register-link').style.display = 'none';
+            } else {
+                document.getElementById('profile-link').style.display = 'none';
+                document.getElementById('login-link').style.display = 'block';
+                document.getElementById('register-link').style.display = 'block';
+            }
+        });
+        
+     
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample leader data
+            const leaders = [
+                {
+                    name: "Maya Solaris",
+                    image: "src/assets/images/leader1.jpg",
+                    category: "spiritual",
+                    description: "Astrology guide offering cosmic wisdom and celestial insights for your spiritual journey."
+                },
+                {
+                    name: "Ethan Rivers",
+                    image: "src/assets/images/leader2.jpg",
+                    category: "mindfulness",
+                    description: "Mindfulness expert helping you cultivate presence and emotional awareness in daily life."
+                },
+                {
+                    name: "Leila Chen",
+                    image: "src/assets/images/leader3.jpg",
+                    category: "movement",
+                    description: "Yoga instructor guiding embodied movement practices for strength and inner peace."
+                },
+                {
+                    name: "Marcus Webb",
+                    image: "src/assets/images/leader4.jpg",
+                    category: "coaching",
+                    description: "Life coach specializing in personal growth and transformational goal achievement."
+                },
+                {
+                    name: "Sofia Mendez",
+                    image: "src/assets/images/leader5.jpg",
+                    category: "creative",
+                    description: "Art therapist exploring creative expression as a pathway to healing and self-discovery."
+                },
+                {
+                    name: "Aiden Forest",
+                    image: "src/assets/images/leader6.jpg",
+                    category: "spiritual",
+                    description: "Tarot reader offering intuitive guidance and symbolic wisdom for life's crossroads."
+                },
+                {
+                    name: "Nora Kim",
+                    image: "src/assets/images/leader7.jpg",
+                    category: "mindfulness",
+                    description: "Psychology expert specializing in emotional intelligence and relationship dynamics."
+                },
+                {
+                    name: "Kai Johnson",
+                    image: "src/assets/images/leader8.jpg",
+                    category: "movement",
+                    description: "Holistic wellness coach integrating movement, nutrition, and mindful living practices."
+                }
+            ];
+            
+            const leadersGrid = document.getElementById('leadersGrid');
+            const filterButtons = document.querySelectorAll('.filter-button');
+            
+            // Function to render leaders
+            function renderLeaders(category = 'all') {
+                leadersGrid.innerHTML = '';
+                
+                const filteredLeaders = category === 'all' 
+                    ? leaders 
+                    : leaders.filter(leader => leader.category === category);
+                
+                filteredLeaders.forEach(leader => {
+                    const leaderCard = document.createElement('div');
+                    leaderCard.className = 'leader-card';
+                    leaderCard.innerHTML = `
+                        <img src="${leader.image}" alt="${leader.name}" class="leader-image">
+                        <div class="leader-info">
+                            <h3 class="leader-name">${leader.name}</h3>
+                            <p class="leader-category">${leader.category.charAt(0).toUpperCase() + leader.category.slice(1)}</p>
+                            <p class="leader-description">${leader.description}</p>
+                            <a href="chat.html?leader=${leader.name.toLowerCase().replace(' ', '-')}" class="leader-button">Chat Now</a>
+                        </div>
+                    `;
+                    leadersGrid.appendChild(leaderCard);
+                });
+            }
+            
+            // Initial render
+            renderLeaders();
+            
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active state
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Render filtered leaders
+                    renderLeaders(filter);
+                });
+            });
+        });
+       // Sample JavaScript for the leaders grid
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample leader data
+            const leaders = [
+                {
+                    name: "Maya Solaris",
+                    image: "src/assets/images/leader1.jpg",
+                    category: "spiritual",
+                    description: "Astrology guide offering cosmic wisdom and celestial insights for your spiritual journey."
+                },
+                {
+                    name: "Ethan Rivers",
+                    image: "src/assets/images/leader2.jpg",
+                    category: "mindfulness",
+                    description: "Mindfulness expert helping you cultivate presence and emotional awareness in daily life."
+                },
+                {
+                    name: "Leila Chen",
+                    image: "src/assets/images/leader3.jpg",
+                    category: "movement",
+                    description: "Yoga instructor guiding embodied movement practices for strength and inner peace."
+                },
+                {
+                    name: "Marcus Webb",
+                    image: "src/assets/images/leader4.jpg",
+                    category: "coaching",
+                    description: "Life coach specializing in personal growth and transformational goal achievement."
+                },
+                {
+                    name: "Sofia Mendez",
+                    image: "src/assets/images/leader5.jpg",
+                    category: "creative",
+                    description: "Art therapist exploring creative expression as a pathway to healing and self-discovery."
+                },
+                {
+                    name: "Aiden Forest",
+                    image: "src/assets/images/leader6.jpg",
+                    category: "spiritual",
+                    description: "Tarot reader offering intuitive guidance and symbolic wisdom for life's crossroads."
+                },
+                {
+                    name: "Nora Kim",
+                    image: "src/assets/images/leader7.jpg",
+                    category: "mindfulness",
+                    description: "Psychology expert specializing in emotional intelligence and relationship dynamics."
+                },
+                {
+                    name: "Kai Johnson",
+                    image: "src/assets/images/leader8.jpg",
+                    category: "movement",
+                    description: "Holistic wellness coach integrating movement, nutrition, and mindful living practices."
+                }
+            ];
+            
+            const leadersGrid = document.getElementById('leadersGrid');
+            const filterButtons = document.querySelectorAll('.filter-button');
+            
+            // Function to render leaders
+            function renderLeaders(category = 'all') {
+                leadersGrid.innerHTML = '';
+                
+                const filteredLeaders = category === 'all' 
+                    ? leaders 
+                    : leaders.filter(leader => leader.category === category);
+                
+                filteredLeaders.forEach(leader => {
+                    const leaderCard = document.createElement('div');
+                    leaderCard.className = 'leader-card';
+                    leaderCard.innerHTML = `
+                        <img src="${leader.image}" alt="${leader.name}" class="leader-image">
+                        <div class="leader-info">
+                            <h3 class="leader-name">${leader.name}</h3>
+                            <p class="leader-category">${leader.category.charAt(0).toUpperCase() + leader.category.slice(1)}</p>
+                            <p class="leader-description">${leader.description}</p>
+                            <a href="chat.html?leader=${leader.name.toLowerCase().replace(' ', '-')}" class="leader-button">Chat Now</a>
+                        </div>
+                    `;
+                    leadersGrid.appendChild(leaderCard);
+                });
+            }
+            
+            // Initial render
+            renderLeaders();
+            
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active state
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Render filtered leaders
+                    renderLeaders(filter);
+                });
+            });
+        });
