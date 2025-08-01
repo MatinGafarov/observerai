@@ -1,14 +1,15 @@
 @import url(./components/root.css);
 
 .chat-section {
-    max-width: 600px;
+    max-width: 700px;
     margin: 60px auto 30px auto;
     background: #fff;
     border-radius: 8px;
     padding: 38px 28px;
-    box-shadow: 0 4px 32px rgba(156,169,130,0.10);
+    box-shadow: 0 4px 32px rgba(156, 169, 130, 0.10);
     animation: fadeInUp 1s;
 }
+
 .chat-section h2 {
     text-align: center;
     margin-bottom: 28px;
@@ -18,6 +19,7 @@
     letter-spacing: 0.02em;
     animation: fadeIn 1.2s;
 }
+
 .chat-window {
     background: #f8f6ec;
     border-radius: 8px;
@@ -29,9 +31,10 @@
     font-size: 1.08rem;
     color: #222;
     border: 1.5px solid #e0dac3;
-    box-shadow: 0 2px 12px rgba(156,169,130,0.07);
+    box-shadow: 0 2px 12px rgba(156, 169, 130, 0.07);
     animation: scaleIn 0.8s;
 }
+
 .chat-message {
     margin-bottom: 16px;
     line-height: 1.7;
@@ -39,6 +42,7 @@
     transform: translateY(30px);
     animation: fadeInUp 0.7s forwards;
 }
+
 .chat-message.user {
     text-align: right;
     color: #222;
@@ -47,8 +51,9 @@
     padding: 8px 14px;
     display: inline-block;
     margin-left: 40px;
-    box-shadow: 0 2px 8px rgba(156,169,130,0.07);
+    box-shadow: 0 2px 8px rgba(156, 169, 130, 0.07);
 }
+
 .chat-message.ai {
     text-align: left;
     color: #7d7d7d;
@@ -57,13 +62,15 @@
     padding: 8px 14px;
     display: inline-block;
     margin-right: 40px;
-    box-shadow: 0 2px 8px rgba(156,169,130,0.07);
+    box-shadow: 0 2px 8px rgba(156, 169, 130, 0.07);
 }
+
 .chat-form {
     display: flex;
     gap: 12px;
     animation: fadeIn 1.3s;
 }
+
 .chat-form input[type="text"] {
     flex: 1;
     padding: 14px;
@@ -73,15 +80,17 @@
     background: #f8f6ec;
     color: #222;
     transition: border 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px rgba(156,169,130,0.07);
+    box-shadow: 0 2px 8px rgba(156, 169, 130, 0.07);
 }
+
 .chat-form input[type="text"]:focus {
     border: 1.5px solid #9CA982;
     outline: none;
-    box-shadow: 0 4px 16px rgba(156,169,130,0.12);
+    box-shadow: 0 4px 16px rgba(156, 169, 130, 0.12);
 }
+
 .chat-form button {
-    background: linear-gradient(90deg,#9CA982 0%,#1a1a1a 100%);
+    background: linear-gradient(90deg, #9CA982 0%, #1a1a1a 100%);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -89,45 +98,79 @@
     font-size: 1.18rem;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(156,169,130,0.08);
+    box-shadow: 0 2px 8px rgba(156, 169, 130, 0.08);
     transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
+
 .chat-form button:hover {
-    background: linear-gradient(90deg,#1a1a1a 0%,#9CA982 100%);
-    box-shadow: 0 8px 32px rgba(156,169,130,0.16);
+    background: linear-gradient(90deg, #1a1a1a 0%, #9CA982 100%);
+    box-shadow: 0 8px 32px rgba(156, 169, 130, 0.16);
     transform: translateY(-2px) scale(1.03);
 }
 
 /* --- Animations --- */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px);}
-    to { opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 @keyframes scaleIn {
-    from { opacity: 0; transform: scale(0.95);}
-    to { opacity: 1; transform: scale(1);}
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* --- Responsive --- */
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .chat-section {
-        max-width: 98vw;
-        padding: 18px 6px;
+        max-width: 80%;
+        padding: 14px 28px;
+
     }
-    .chat-section h2 {
-        font-size: 1.2rem;
+  }
+    @media (max-width: 700px) {
+        .chat-section {
+            max-width: 90%;
+
+            padding: 14px 28px;
+
+        }
+
+        .chat-section h2 {
+            font-size: 1.2rem;
+        }
+
+        .chat-form button {
+            font-size: 1rem;
+            padding: 14px 28px;
+        }
+
+        .chat-window {
+            min-height: 180px;
+            max-height: 220px;
+            padding: 10px;
+        }
     }
-    .chat-form button {
-        font-size: 1rem;
-        padding: 10px 14px;
-    }
-    .chat-window {
-        min-height: 180px;
-        max-height: 220px;
-        padding: 10px;
-    }
-}

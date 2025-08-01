@@ -307,3 +307,109 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             });
         });
+        const chatForm = document.getElementById('chatForm');
+const chatInput = document.getElementById('chatInput');
+const chatWindow = document.getElementById('chatWindow');
+
+chatForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userMsg = chatInput.value.trim();
+    if (!userMsg) return;
+
+    // Show user message
+    const userDiv = document.createElement('div');
+    userDiv.className = 'chat-message user';
+    userDiv.textContent = userMsg;
+    chatWindow.appendChild(userDiv);
+
+    // Simulate AI reply (replace with real AI backend if needed)
+    setTimeout(() => {
+        const aiDiv = document.createElement('div');
+        aiDiv.className = 'chat-message ai';
+        aiDiv.textContent = "AI: " + getAIResponse(userMsg);
+        chatWindow.appendChild(aiDiv);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }, 700);
+
+    chatInput.value = '';
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+});
+
+// Simple AI response for demo
+function getAIResponse(msg) {
+    // You can integrate backend here
+    if (msg.toLowerCase().includes('hello')) return "Hello! How can I help you today?";
+    if (msg.toLowerCase().includes('who are you')) return "I'm ObserverAI, your personal AI assistant.";
+    return "I have received your message: \"" + msg + "\"";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Set animation delay for category cards
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach((card, index) => {
+        card.style.setProperty('--card-index', index);
+    });
+    
+    // Set animation delay for filter buttons
+    const filterButtons = document.querySelectorAll('.filter-button');
+    filterButtons.forEach((button, index) => {
+        button.style.setProperty('--button-index', index);
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Scroll fade-in animation
+    const scrollFadeElements = document.querySelectorAll('.scroll-fade-in');
+    
+    const fadeInOnScroll = () => {
+        scrollFadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('visible');
+            }
+        });
+    };
+    
+    // Initial check for elements in view
+    fadeInOnScroll();
+    
+    // Check on scroll
+    window.addEventListener('scroll', fadeInOnScroll);
+    
+    // Scroll to top button
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    const scrollFunction = () => {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    };
+    
+    window.addEventListener('scroll', scrollFunction);
+    
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Add animation delay to FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach((item, index) => {
+        item.style.animationDelay = `${0.3 + (index * 0.1)}s`;
+    });
+    
+    // FAQ functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const expanded = question.getAttribute('aria-expanded') === 'true';
+            question.setAttribute('aria-expanded', !expanded);
+        });
+    });
+});
