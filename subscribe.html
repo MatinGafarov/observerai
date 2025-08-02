@@ -12,29 +12,31 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbar-mobile-toggle" id="navbarToggle">
+    <div class="navbar__inner">
+        <div class="navbar__mobile__toggle" id="navbarToggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <ul class="navbar-links" id="navbarLinks">
+        <ul class="navbar__links" id="navbarLinks">
             <li><a href="index.html">Main Page</a></li>
             <li><a href="explore.html">Explore Leaders & Categories</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="chat.html">Chat With AI</a></li>
-            <li class="navbar-profile">
+            <li class="navbar__profile">
                 <a href="profile.html">
-                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile__icon">
                 </a>
             </li>
-            <li class="navbar-auth"><a href="login.html">Login</a></li>
-            <li class="navbar-auth"><a href="register.html">Register</a></li>
+            <li class="navbar__auth"><a href="login.html">Login</a></li>
+            <li class="navbar__auth"><a href="register.html">Register</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
     <main>
-        <section class="subscribe-section" class="active">
+        <section class="subscribe__section" class="active">
             <h2>Subscribe to ObserverAI</h2>
-            <form class="subscribe-form">
+            <form class="subscribe__form">
                 <label for="email">Email:</label>
                 <input type="email" id="email" placeholder="name@fromer.com" required>
 
@@ -49,10 +51,11 @@
             </form>
         </section>
     </main>
+      <!-- #region Footer -->
     <footer class="footer2">
-        <div class="footer2-top">
-            <div class="footer2-cols">
-                <div class="footer2-col">
+        <div class="footer2__top">
+            <div class="footer2__cols">
+                <div class="footer2__col">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#">Landing Page</a></li>
@@ -62,7 +65,7 @@
                         <li><a href="#">Integrations</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Use Cases</h4>
                     <ul>
                         <li><a href="#">Web-designers</a></li>
@@ -71,7 +74,7 @@
                         <li><a href="#">Website Builder</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="#">Academy</a></li>
@@ -79,7 +82,7 @@
                         <li><a href="#">Themes</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -90,9 +93,9 @@
                 </div>
             </div>
         </div>
-        <hr class="footer2-divider">
-        <div class="footer2-bottom">
-            <ul class="footer2-links">
+        <hr class="footer2__divider">
+        <div class="footer2__bottom">
+            <ul class="footer2__links">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Sales and Refunds</a></li>
@@ -100,6 +103,7 @@
             </ul>
         </div>
     </footer>
+    <!-- #endregion -->
 
     <script src="src/js/script.js"></script>
 </body>

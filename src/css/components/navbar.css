@@ -1,9 +1,12 @@
+/* --- Desktop Navbar --- */
 .navbar {
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #eae4c8;
     padding: 0;
     position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0 2px 12px rgba(224,218,195,0.07);
     z-index: 100;
     display: flex;
@@ -11,10 +14,8 @@
     justify-content: center;
     min-height: 64px;
     transition: box-shadow 0.2s;
-    
-
 }
-.navbar-inner {
+.navbar__inner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,7 +24,7 @@
     justify-content: space-between;
     padding: 0 32px;
 }
-.navbar-logo {
+.navbar__logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #9CA982;
@@ -32,10 +33,10 @@
     margin-right: 32px;
     transition: color 0.2s;
 }
-.navbar-logo:hover {
+.navbar__logo:hover {
     color: #222;
 }
-.navbar-links {
+.navbar__links {
     list-style: none;
     display: flex;
     gap: 28px;
@@ -44,7 +45,7 @@
     padding: 0;
     transition: gap 0.2s;
 }
-.navbar-links a {
+.navbar__links a {
     text-decoration: none;
     color: #7d7d7d;
     font-weight: 500;
@@ -55,44 +56,44 @@
     transition: color 0.2s, border-bottom 0.2s, background 0.2s;
     position: relative;
 }
-.navbar-links a.active,
-.navbar-links a:hover {
+.navbar__links a.active,
+.navbar__links a:hover {
     color: #222;
     border-bottom: 2px solid #9CA982;
     background: #f8f6ec;
 }
-.navbar-profile {
+.navbar__profile {
     display: flex;
     align-items: center;
     margin-left: 24px;
 }
-.profile-icon {
+.profile__icon {
     width: 32px;
     height: 32px;
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     transition: box-shadow 0.2s;
 }
-.profile-icon:hover {
+.profile__icon:hover {
     box-shadow: 0 4px 16px rgba(156,169,130,0.18);
 }
-.navbar-auth a {
+.navbar__auth a {
     color: #9CA982;
     font-weight: 600;
     border-bottom: none;
     padding: 8px 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #f8f6ec;
     margin-left: 8px;
     transition: color 0.2s, background 0.2s;
 }
-.navbar-auth a:hover {
+.navbar__auth a:hover {
     color: #fff;
     background: #9CA982;
 }
 
 /* --- Mobile Navbar --- */
-.navbar-mobile-toggle {
+.navbar__mobile__toggle {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +104,7 @@
     margin-left: auto;
     z-index: 101;
 }
-.navbar-mobile-toggle span {
+.navbar__mobile__toggle span {
     display: block;
     width: 26px;
     height: 3px;
@@ -112,11 +113,17 @@
     border-radius: 2px;
     transition: all 0.3s;
 }
+
+/* --- Responsive --- */
 @media (max-width: 900px) {
-    .navbar-inner {
-        padding: 0 12px;
+    .navbar__inner {
+        padding: 0 10px;
     }
-    .navbar-links {
+    .navbar__mobile__toggle {
+        display: flex;
+        margin-right: 10px;
+    }
+    .navbar__links {
         position: absolute;
         top: 64px;
         left: 0;
@@ -128,25 +135,18 @@
         display: none;
         z-index: 1000;
         animation: fadeIn 0.3s;
+        padding: 0 10px;
     }
-    .navbar-links.show {
+    .navbar__links.show {
         display: flex;
     }
-    .navbar-links li {
+    .navbar__links li {
         width: 100%;
         text-align: left;
         border-bottom: 1px solid #eee;
         padding: 16px 24px;
     }
-    .navbar-mobile-toggle {
-        display: flex;
-        margin-right: 20px;
-    }
-    .navbar-auth {
-       display: flex;
-        margin-right: 25px;
-    }
-    .navbar-profile {
+    .navbar__profile {
         justify-content: flex-start !important;
         align-items: center !important;
         display: flex !important;
@@ -156,11 +156,13 @@
         margin-right: auto;
         margin-left: 0;
     }
-    .navbar-profile a {
+    .navbar__profile a {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
+    .navbar__auth {
+        display: flex;
+        margin-right: 0;
+    }
 }
- /* #endregion */
-

@@ -1,7 +1,7 @@
 @import url(./components/root.css);
 
 /* --- Page Header --- */
-.explore-title {
+.explore__title {
     margin: 48px 0 36px 60px;
     font-size: 2rem;
     font-weight: 700;
@@ -10,13 +10,13 @@
     animation: fadeIn 0.8s;
 }
 
-.page-header {
+.page__header {
     text-align: center;
     margin: 2rem 0;
     animation: fadeInUp 0.8s;
 }
 
-.page-subtitle {
+.page__subtitle {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 3rem;
@@ -26,21 +26,21 @@
 }
 
 /* --- Categories Section --- */
-.categories-section {
+.categories__section {
     padding: 3rem 2rem;
     background-color: #f8f8f8;
     margin-bottom: 3rem;
     animation: fadeIn 1s;
 }
 
-.section-title {
+.section__title {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
     animation: fadeInUp 0.8s;
 }
 
-.section-subtitle {
+.section__subtitle {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 2rem;
@@ -48,7 +48,7 @@
     animation: fadeInUp 1s 0.1s both;
 }
 
-.categories-grid {
+.categories__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
@@ -57,9 +57,9 @@
     animation: fadeInUp 1.2s 0.2s both;
 }
 
-.category-card {
+.category__card {
     background: white;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -67,52 +67,52 @@
     animation-delay: calc(var(--card-index, 0) * 0.1s + 0.3s);
 }
 
-.category-card:hover {
+.category__card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(156,169,130,0.15);
 }
 
-.category-image {
+.category__image {
     width: 100%;
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
-.category-card:hover .category-image {
+.category__card:hover .category__image {
     transform: scale(1.05);
 }
 
-.category-content {
+.category__content {
     padding: 1.5rem;
     animation: fadeIn 1s 0.5s both;
 }
 
-.category-title {
+.category__title {
     font-size: 1.25rem;
     margin: 0 0 0.75rem;
     color: #333;
     transition: color 0.3s ease;
 }
 
-.category-card:hover .category-title {
+.category__card:hover .category__title {
     color: #9CA982;
 }
 
-.category-desc {
+.category__desc {
     font-size: 0.95rem;
     line-height: 1.5;
     color: #555;
     margin-bottom: 1.25rem;
 }
 
-.category-link {
+.category__link {
     display: inline-block;
     padding: 0.5rem 1rem;
     background: #333;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 500;
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -120,13 +120,13 @@
     overflow: hidden;
 }
 
-.category-link:hover {
+.category__link:hover {
     background: #9CA982;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(156,169,130,0.3);
 }
 
-.category-link::after {
+.category__link::after {
     content: '';
     position: absolute;
     top: 0;
@@ -137,17 +137,17 @@
     transition: left 0.7s ease;
 }
 
-.category-link:hover::after {
+.category__link:hover::after {
     left: 100%;
 }
 
 /* --- Leaders Section --- */
-.leaders-section {
+.leaders__section {
     padding: 2rem;
     animation: fadeIn 0.8s;
 }
 
-.leaders-filter {
+.leaders__filter {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -156,10 +156,10 @@
     animation: fadeInUp 0.8s;
 }
 
-.filter-button {
+.filter__button {
     padding: 0.5rem 1rem;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 8px;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -167,7 +167,7 @@
     animation-delay: calc(var(--button-index, 0) * 0.1s + 0.2s);
 }
 
-.filter-button:hover, .filter-button.active {
+.filter__button:hover, .filter__button.active {
     background: #9CA982;
     color: white;
     border-color: #9CA982;
@@ -175,7 +175,7 @@
     box-shadow: 0 4px 12px rgba(156,169,130,0.2);
 }
 
-.leaders-grid {
+.leaders__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 44px 36px;
@@ -185,7 +185,7 @@
     animation: fadeInUp 1s;
 }
 
-.leader-card {
+.leader__card {
     background: #fff;
     border-radius: 8px;
     padding: 24px 18px 18px 18px;
@@ -199,12 +199,12 @@
     animation: scaleIn 0.7s;
 }
 
-.leader-card:hover {
+.leader__card:hover {
     box-shadow: 0 8px 32px rgba(156,169,130,0.12);
     transform: translateY(-8px) scale(1.03);
 }
 
-.leader-img {
+.leader__img {
     width: 100%;
     max-width: 160px;
     height: 160px;
@@ -216,31 +216,32 @@
     transition: box-shadow 0.2s;
 }
 
-.leader-img:hover {
+.leader__img:hover {
     box-shadow: 0 8px 32px rgba(156,169,130,0.18);
 }
 
-.leader-info {
+.leader__info {
     text-align: center;
     animation: fadeIn 1s;
 }
 
-.leader-name {
+.leader__name {
     font-weight: 700;
     color: #222;
     font-size: 1.18rem;
     margin-bottom: 6px;
+    margin-top: 16px;
     letter-spacing: 0.01em;
 }
 
-.leader-tags {
+.leader__tags {
     color: #9CA982;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 2px;
 }
 
-.leader-desc {
+.leader__desc {
     color: #7d7d7d;
     font-size: 0.97rem;
     font-weight: 400;
@@ -250,35 +251,35 @@
     animation: fadeIn 1.2s;
 }
 
-.leader-image {
+.leader__image {
     width: 100%;
     height: 240px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
-.leader-card:hover .leader-image {
+.leader__card:hover .leader__image {
     transform: scale(1.05);
 }
 
-.leader-category {
+.leader__category {
     color: #666;
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
-.leader-description {
+.leader__description {
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 
-.leader-button {
+.leader__button {
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background: #333;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -286,13 +287,13 @@
     overflow: hidden;
 }
 
-.leader-button:hover {
+.leader__button:hover {
     background: #9CA982;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(156,169,130,0.3);
 }
 
-.leader-button::after {
+.leader__button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -303,7 +304,7 @@
     transition: left 0.7s ease;
 }
 
-.leader-button:hover::after {
+.leader__button:hover::after {
     left: 100%;
 }
 
@@ -346,57 +347,57 @@
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
-    .leaders-grid {
+    .leaders__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 28px 16px;
         margin: 0 10px 30px 10px;
     }
     
-    .explore-title {
+    .explore__title {
         margin: 28px 0 18px 18px;
         font-size: 1.3rem;
     }
     
-    .categories-grid {
+    .categories__grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     
-    .categories-section, .leaders-section {
+    .categories__section, .leaders__section {
         padding: 2rem 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .categories-grid, .leaders-grid {
+    .categories__grid, .leaders__grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     
-    .categories-section, .leaders-section {
+    .categories__section, .leaders__section {
         padding: 2rem 1rem;
     }
 }
 
 @media (max-width: 600px) {
-    .leaders-grid {
+    .leaders__grid {
         grid-template-columns: 1fr;
         margin: 0 5px 20px 5px;
     }
     
-    .explore-title {
+    .explore__title {
         margin: 18px 0 12px 10px;
         font-size: 1.1rem;
     }
     
-    .leader-card {
+    .leader__card {
         max-width: 98vw;
         padding: 18px 8px 12px 8px;
     }
     
-    .categories-grid {
+    .categories__grid {
         grid-template-columns: 1fr;
     }
     
-    .section-title {
+    .section__title {
         font-size: 1.5rem;
     }
 }

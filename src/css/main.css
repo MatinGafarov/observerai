@@ -56,7 +56,7 @@
     animation: fadeIn 1s ease-out;
 }
 
-.hero-title {
+.hero__title {
     font-size: 2.6rem;
     font-weight: 300;
     color: #9CA982;
@@ -67,7 +67,7 @@
     animation: fadeInDown 1.2s ease-out;
 }
 
-.hero-title--blc {
+.hero__title--blc {
     font-size: 2.6rem;
     font-weight: 400;
     color: #1a1a1a;
@@ -76,7 +76,7 @@
     animation: fadeInDown 1.2s ease-out 0.2s both;
 }
 
-.hero-image {
+.hero__image {
     position: relative;
     width: 100%;
     max-width: 600px;
@@ -84,7 +84,7 @@
     animation: scaleIn 1.4s ease-out 0.3s both;
 }
 
-.hero-image img {
+.hero__image img {
     width: 100%;
     height: 340px;
     border-radius: 8px;
@@ -94,12 +94,12 @@
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
-.hero-image img:hover {
+.hero__image img:hover {
     box-shadow: 0 8px 32px rgba(156, 169, 130, 0.18);
     transform: scale(1.02);
 }
 
-.overlay-text {
+.overlay__text {
     position: absolute;
     bottom: 150px;
     left: 0;
@@ -123,7 +123,7 @@
     animation: fadeInUp 1s ease-out 0.6s both;
 }
 
-.stat-box {
+.stat__box {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     padding: 18px 32px;
@@ -134,24 +134,24 @@
     animation-fill-mode: both;
 }
 
-.stat-box:nth-child(1) {
+.stat__box:nth-child(1) {
     animation-delay: 0.7s;
 }
 
-.stat-box:nth-child(2) {
+.stat__box:nth-child(2) {
     animation-delay: 0.9s;
 }
 
-.stat-box:nth-child(3) {
+.stat__box:nth-child(3) {
     animation-delay: 1.1s;
 }
 
-.stat-box:hover {
+.stat__box:hover {
     box-shadow: 0 8px 32px rgba(156, 169, 130, 0.12);
     transform: translateY(-8px);
 }
 
-.stat-box h3 {
+.stat__box h3 {
     font-size: 2.3rem;
     font-weight: 700;
     color: #000;
@@ -160,7 +160,7 @@
     animation: fadeIn 1s ease-out 1.2s both;
 }
 
-.stat-box p {
+.stat__box p {
     font-size: 1.02rem;
     color: #b3a77a;
     font-weight: 500;
@@ -180,7 +180,7 @@
     animation: fadeInUp 1.2s ease-out 0.8s both;
 }
 
-.testimonial-author {
+.testimonial__author {
     display: block;
     margin-top: 10px;
     font-size: 1rem;
@@ -213,7 +213,7 @@
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.category-grid {
+.category__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px 32px;
@@ -222,9 +222,9 @@
     animation: fadeIn 1s ease-out 0.4s both;
 }
 
-.category-card {
+.category__card {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
     padding: 18px 12px 12px 12px;
     text-align: left;
@@ -237,36 +237,36 @@
     animation-fill-mode: both;
 }
 
-.category-card:nth-child(1) {
+.category__card:nth-child(1) {
     animation-delay: 0.5s;
 }
 
-.category-card:nth-child(2) {
+.category__card:nth-child(2) {
     animation-delay: 0.7s;
 }
 
-.category-card:nth-child(3) {
+.category__card:nth-child(3) {
     animation-delay: 0.9s;
 }
 
-.category-card:nth-child(4) {
+.category__card:nth-child(4) {
     animation-delay: 0.6s;
 }
 
-.category-card:nth-child(5) {
+.category__card:nth-child(5) {
     animation-delay: 0.8s;
 }
 
-.category-card:nth-child(6) {
+.category__card:nth-child(6) {
     animation-delay: 1s;
 }
 
-.category-card:hover {
+.category__card:hover {
     box-shadow: 0 8px 32px rgba(156, 169, 130, 0.12);
     transform: translateY(-8px) scale(1.03);
 }
 
-.category-card img {
+.category__card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 18px;
@@ -276,12 +276,12 @@
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.category-card:hover img {
+.category__card:hover img {
     transform: scale(1.05);
     box-shadow: 0 8px 24px rgba(156, 169, 130, 0.15);
 }
 
-.category-card h3 {
+.category__card h3 {
     font-size: 1.08rem;
     font-weight: 700;
     margin: 0 0 6px 0;
@@ -289,11 +289,11 @@
     transition: color 0.3s;
 }
 
-.category-card:hover h3 {
+.category__card:hover h3 {
     color: #9CA982;
 }
 
-.category-desc {
+.category__desc {
     font-size: 0.97rem;
     color: #9CA982;
     font-weight: 400;
@@ -301,13 +301,13 @@
     transition: color 0.3s;
 }
 
-.category-card strong {
+.category__card strong {
     color: #9CA982;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-.category-card:hover strong {
+.category__card:hover strong {
     color: #7d8a65;
 }
 
@@ -333,7 +333,7 @@
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.pricing-cards {
+.pricing__cards {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -342,7 +342,7 @@
     animation: fadeIn 1s ease-out 0.4s both;
 }
 
-.pricing-card {
+.pricing__card {
     background: #e6e9d8;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -358,29 +358,29 @@
     animation-fill-mode: both;
 }
 
-.pricing-card.basic {
+.pricing__card.basic {
     background: #dbe3c2;
     animation-delay: 0.5s;
 }
 
-.pricing-card.pro {
+.pricing__card.pro {
     background: #e6e9d8;
     animation-delay: 0.7s;
 }
 
-.pricing-card:hover {
+.pricing__card:hover {
     box-shadow: 0 8px 32px rgba(156, 169, 130, 0.12);
     transform: translateY(-8px) scale(1.03);
 }
 
-.pricing-card h3 {
+.pricing__card h3 {
     font-size: 1.2rem;
     font-weight: 700;
     margin: 0 0 8px 0;
     transition: color 0.3s;
 }
 
-.pricing-card:hover h3 {
+.pricing__card:hover h3 {
     color: #7d8a65;
 }
 
@@ -392,18 +392,18 @@
     transition: color 0.3s;
 }
 
-.pricing-card:hover .price {
+.pricing__card:hover .price {
     color: #7d8a65;
 }
 
-.pricing-card ul {
+.pricing__card ul {
     padding-left: 18px;
     margin-bottom: 18px;
     color: #555;
     font-size: 1rem;
 }
 
-.pricing-card button {
+.pricing__card button {
     background: linear-gradient(90deg, #9CA982 0%, #1a1a1a 100%);
     background-size: 200% 100%;
     color: #fff;
@@ -419,13 +419,13 @@
     overflow: hidden;
 }
 
-.pricing-card button:hover {
+.pricing__card button:hover {
     background-position: 100% 0;
     box-shadow: 0 4px 15px rgba(156, 169, 130, 0.3);
     transform: translateY(-2px);
 }
 
-.pricing-card button::after {
+.pricing__card button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -436,7 +436,7 @@
     transition: left 0.7s ease;
 }
 
-.pricing-card button:hover::after {
+.pricing__card button:hover::after {
     left: 100%;
 }
 
@@ -530,33 +530,33 @@
 }
 
 /* FAQ Section Styles */
-.faq-section {
+.faq__section {
     padding: 3rem 20px;
     max-width: 800px;
     margin: 0 auto;
     animation: fadeInUp 1s ease-out;
 }
 
-.faq-container {
+.faq__container {
     margin-top: 2rem;
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.faq-item {
+.faq__item {
     margin-bottom: 1rem;
     border-bottom: 1px solid #eee;
     animation: fadeInUp 0.8s ease-out;
     animation-fill-mode: both;
 }
 
-.faq-item:nth-child(1) { animation-delay: 0.3s; }
-.faq-item:nth-child(2) { animation-delay: 0.4s; }
-.faq-item:nth-child(3) { animation-delay: 0.5s; }
-.faq-item:nth-child(4) { animation-delay: 0.6s; }
-.faq-item:nth-child(5) { animation-delay: 0.7s; }
-.faq-item:nth-child(6) { animation-delay: 0.8s; }
+.faq__item:nth-child(1) { animation-delay: 0.3s; }
+.faq__item:nth-child(2) { animation-delay: 0.4s; }
+.faq__item:nth-child(3) { animation-delay: 0.5s; }
+.faq__item:nth-child(4) { animation-delay: 0.6s; }
+.faq__item:nth-child(5) { animation-delay: 0.7s; }
+.faq__item:nth-child(6) { animation-delay: 0.8s; }
 
-.faq-question {
+.faq__question {
     width: 100%;
     background: none;
     border: none;
@@ -571,47 +571,47 @@
     transition: color 0.3s;
 }
 
-.faq-question:hover {
+.faq__question:hover {
     color: #9CA982;
 }
 
-.faq-icon {
+.faq__icon {
     font-size: 1.5rem;
     transition: transform 0.3s ease, color 0.3s;
 }
 
-.faq-question:hover .faq-icon {
+.faq__question:hover .faq__icon {
     color: #9CA982;
 }
 
-.faq-question[aria-expanded="true"] .faq-icon {
+.faq__question[aria-expanded="true"] .faq__icon {
     transform: rotate(45deg);
     color: #9CA982;
 }
 
-.faq-answer {
+.faq__answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 0;
 }
 
-.faq-question[aria-expanded="true"]+.faq-answer {
+.faq__question[aria-expanded="true"]+.faq__answer {
     max-height: 500px;
     padding-bottom: 1.5rem;
     animation: fadeIn 0.8s ease-out;
 }
 
-.faq-answer p {
+.faq__answer p {
     margin-top: 0;
     line-height: 1.6;
 }
 
-.faq-answer ul {
+.faq__answer ul {
     padding-left: 1.5rem;
 }
 
-.faq-answer li {
+.faq__answer li {
     margin-bottom: 0.5rem;
     line-height: 1.5;
 }
@@ -619,7 +619,7 @@
 /* --- Responsive --- */
 @media (max-width: 1100px) {
     .categories,
-    .footer-links,
+    .footer__links,
     .pricing {
         max-width: 98vw;
     }
@@ -630,23 +630,23 @@
         gap: 32px;
     }
 
-    .category-grid {
+    .category__grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    .footer-links {
+    .footer__links {
         gap: 40px;
     }
 }
 
 @media (max-width: 700px) {
-    .hero-title,
-    .hero-title--blc {
+    .hero__title,
+    .hero__title--blc {
         font-size: 1.5rem;
         margin: 20px;
     }
 
-    .hero-image img {
+    .hero__image img {
         width: 90%;
     }
 
@@ -657,47 +657,58 @@
         width: 90%;
     }
 
-    .category-grid {
+    .category__grid {
         gap: 20px;
         margin: 20px auto;
         width: 90%;
-    }
-
-    .pricing-cards {
-        align-items: center;
-        gap: 20px;
     }
     
-    .faq-answer {
+
+    .pricing__cards {
+        align-items: center;
+        gap: 20px;
+    }
+     .category__desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 2 sətrə qədər göstər */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        max-width: 100%;
+        min-height: 2.4em;}
+    
+    .faq__answer {
         margin: 20px auto;
         gap: 20px;
         width: 90%;
     }
 
-    .footer-links {
+    .footer__links {
         gap: 20px;
         align-items: center;
     }
 
-    .footer-bottom {
+    .footer__bottom {
         text-align: left;
     }
 }
 
 /* --- Scroll Fade In Animation --- */
-.scroll-fade-in {
+.scroll__fade-in {
     opacity: 0;
     transform: translateY(40px) scale(0.98);
     transition: opacity 0.7s cubic-bezier(.4, 0, .2, 1), transform 0.7s cubic-bezier(.4, 0, .2, 1);
     will-change: opacity, transform;
 }
 
-.scroll-fade-in.visible {
+.scroll__fade-in.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
 
 #scrollToTopBtn {
+    display: none;
     position: fixed;
     right: 32px;
     bottom: 38px;
@@ -721,6 +732,7 @@
 
 #scrollToTopBtn.show {
     opacity: 1;
+    display: block;
     pointer-events: auto;
     transform: translateY(0);
 }

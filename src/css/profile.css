@@ -28,7 +28,7 @@
 }
 
 /* Page title */
-.page-title {
+.page__title {
     text-align: center;
     margin: 2rem 0;
     font-size: 2rem;
@@ -36,7 +36,7 @@
 }
 
 /* Profile container */
-.profile-container {
+.profile__container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xl);
@@ -44,7 +44,7 @@
 }
 
 /* Profile sidebar */
-.profile-sidebar {
+.profile__sidebar {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -55,7 +55,7 @@
     gap: var(--spacing-lg);
 }
 
-.profile-image-container {
+.profile__image__container {
     position: relative;
     width: 180px;
     height: 180px;
@@ -63,7 +63,7 @@
     overflow: hidden;
 }
 
-.profile-image {
+.profile__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -71,7 +71,7 @@
     transition: filter 0.3s ease;
 }
 
-.profile-image-overlay {
+.profile__image__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -84,31 +84,31 @@
     justify-content: center;
 }
 
-.profile-image-container:hover .profile-image-overlay {
+.profile__image__container:hover .profile__image__overlay {
     opacity: 1;
 }
 
-.profile-image-container:hover .profile-image {
+.profile__image__container:hover .profile__image {
     filter: brightness(0.8);
 }
 
-.change-photo-btn {
+.change__photo__btn {
     background: transparent;
     border: 1px solid white;
     color: white;
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.change-photo-btn:hover {
+.change__photo__btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Profile stats */
-.profile-stats {
+.profile__stats {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -117,25 +117,25 @@
     padding: var(--spacing-md) 0;
 }
 
-.stat-item {
+.stat__item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.stat-value {
+.stat__value {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
 }
 
-.stat-label {
+.stat__label {
     font-size: 0.8rem;
     color: var(--light-text);
 }
 
 /* Profile subscription */
-.profile-subscription {
+.profile__subscription {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,24 +143,24 @@
     width: 100%;
 }
 
-.subscription-badge {
+.subscription__badge {
     padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.subscription-badge.basic {
+.subscription__badge.basic {
     background-color: #e9f5ff;
     color: #0077cc;
 }
 
-.subscription-badge.pro {
+.subscription__badge.pro {
     background-color: #f0e6ff;
     color: #6200ea;
 }
 
-.upgrade-button {
+.upgrade__button {
     display: inline-block;
     padding: var(--spacing-sm) var(--spacing-lg);
     background-color: var(--primary-color);
@@ -173,12 +173,12 @@
     width: 100%;
 }
 
-.upgrade-button:hover {
+.upgrade__button:hover {
     background-color: var(--secondary-color);
 }
 
 /* Profile content */
-.profile-content {
+.profile__content {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -188,49 +188,49 @@
     gap: var(--spacing-xl);
 }
 
-.profile-section {
+.profile__section {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: var(--spacing-lg);
 }
 
-.profile-section:last-child {
+.profile__section:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
 
-.section-title {
+.section__title {
     font-size: 1.2rem;
     margin-bottom: var(--spacing-md);
     color: var(--primary-color);
 }
 
 /* Profile information */
-.profile-info {
+.profile__info {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
 }
 
-.info-group {
+.info__group {
     display: flex;
     flex-direction: column;
 }
 
-.info-label {
+.info__label {
     font-size: 0.8rem;
     color: var(--light-text);
     margin-bottom: var(--spacing-xs);
 }
 
-.info-value {
+.info__value {
     font-size: 1rem;
     font-weight: 500;
 }
 
 /* Buttons */
-.edit-button,
-.action-button {
+.edit__button,
+.action__button {
     padding: var(--spacing-sm) var(--spacing-lg);
     border: none;
     border-radius: var(--border-radius);
@@ -239,165 +239,165 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.edit-button {
+.edit__button {
     background-color: var(--primary-color);
     color: white;
 }
 
-.edit-button:hover {
+.edit__button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
-.account-actions {
+.account__actions {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-md);
 }
 
-.action-button {
+.action__button {
     flex: 1;
     min-width: 150px;
 }
 
-.change-password {
+.change__password {
     background-color: #f0f0f0;
     color: var(--primary-color);
 }
 
-.change-password:hover {
+.change__password:hover {
     background-color: #e0e0e0;
     transform: translateY(-2px);
 }
 
-.delete-account {
+.delete__account {
     background-color: #fff2f2;
     color: #d32f2f;
 }
 
-.delete-account:hover {
+.delete__account:hover {
     background-color: #ffebeb;
     transform: translateY(-2px);
 }
 
 /* Responsive styles */
 @media (min-width: 768px) {
-    .profile-container {
+    .profile__container {
         flex-direction: row;
         align-items: flex-start;
     }
 
-    .profile-sidebar {
+    .profile__sidebar {
         flex: 0 0 300px;
     }
 
-    .profile-content {
+    .profile__content {
         flex: 1;
     }
 
-    .profile-info {
+    .profile__info {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
-    .page-title {
+    .page__title {
         font-size: 2.5rem;
         margin: 3rem 0;
     }
 
-    .profile-image-container {
+    .profile__image__container {
         width: 220px;
         height: 220px;
     }
 
-    .profile-content {
+    .profile__content {
         padding: var(--spacing-xl) var(--spacing-xl);
     }
 
-    .section-title {
+    .section__title {
         font-size: 1.4rem;
     }
 
-    .info-value {
+    .info__value {
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 767px) {
-    .page-title {
+    .page__title {
         font-size: 1.8rem;
         margin: 1.5rem 0;
     }
 
-    .profile-sidebar {
+    .profile__sidebar {
         margin-bottom: 0;
     }
 
-    .profile-image-container {
+    .profile__image__container {
         width: 150px;
         height: 150px;
     }
 
-    .profile-content {
+    .profile__content {
         padding: var(--spacing-lg);
     }
 
-    .account-actions {
+    .account__actions {
         flex-direction: column;
     }
 
-    .action-button {
+    .action__button {
         width: 100%;
     }
 }
 
-.profile-container {
+.profile__container {
     animation: fadeIn 0.8s ease forwards;
 }
 
 
-.profile-sidebar {
+.profile__sidebar {
     animation: fadeInUp 0.8s ease forwards;
     animation-delay: 0.2s;
     opacity: 0;
 }
 
-.profile-image-container {
+.profile__image__container {
     animation: scaleIn 0.6s ease forwards;
     animation-delay: 0.4s;
     opacity: 0;
 }
 
 
-.profile-section:nth-child(1) {
+.profile__section:nth-child(1) {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.3s;
     opacity: 0;
 }
 
-.profile-section:nth-child(2) {
+.profile__section:nth-child(2) {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.5s;
     opacity: 0;
 }
 
-.profile-section:nth-child(3) {
+.profile__section:nth-child(3) {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.7s;
     opacity: 0;
 }
 
 
-.stat-item {
+.stat__item {
     animation: fadeIn 0.6s ease forwards;
     animation-delay: 0.6s;
     opacity: 0;
 }
 
-.edit-button,
-.action-button,
-.upgrade-button {
+.edit__button,
+.action__button,
+.upgrade__button {
     animation: scaleIn 0.5s ease forwards;
     animation-delay: 0.8s;
     opacity: 0;

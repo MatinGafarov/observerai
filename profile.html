@@ -12,113 +12,115 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbar-mobile-toggle" id="navbarToggle">
+    <div class="navbar__inner">
+        <div class="navbar__mobile__toggle" id="navbarToggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <ul class="navbar-links" id="navbarLinks">
+        <ul class="navbar__links" id="navbarLinks">
             <li><a href="index.html">Main Page</a></li>
             <li><a href="explore.html">Explore Leaders & Categories</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="chat.html">Chat With AI</a></li>
-            <li class="navbar-profile">
+            <li class="navbar__profile">
                 <a href="profile.html" class="active">
-                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile-icon">
+                    <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile__icon">
                 </a>
             </li>
-            <li class="navbar-auth"><a href="login.html">Login</a></li>
-            <li class="navbar-auth"><a href="register.html">Register</a></li>
+            <li class="navbar__auth"><a href="login.html">Login</a></li>
+            <li class="navbar__auth"><a href="register.html">Register</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
 
     <main>
         <div class="container">
-            <h1 class="page-title">Your Profile</h1>
+            <h1 class="page__title">Your Profile</h1>
 
-            <div class="profile-container">
-                <div class="profile-sidebar">
-                    <div class="profile-image-container">
-                        <img src="src/assets/images/ferhad.jpg" alt="User Profile" class="profile-image">
-                        <div class="profile-image-overlay">
-                            <button class="change-photo-btn">Change Photo</button>
+            <div class="profile__container">
+                <div class="profile__sidebar">
+                    <div class="profile__image__container">
+                        <img src="src/assets/images/ferhad.jpg" alt="User Profile" class="profile__image">
+                        <div class="profile__image__overlay">
+                            <button class="change__photo__btn">Change Photo</button>
                         </div>
                     </div>
 
-                    <div class="profile-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">5</span>
-                            <span class="stat-label">AI Chats</span>
+                    <div class="profile__stats">
+                        <div class="stat__item">
+                            <span class="stat__value">5</span>
+                            <span class="stat__label">AI Chats</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-value">3</span>
-                            <span class="stat-label">Favorites</span>
+                        <div class="stat__item">
+                            <span class="stat__value">3</span>
+                            <span class="stat__label">Favorites</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-value">12</span>
-                            <span class="stat-label">Days Active</span>
+                        <div class="stat__item">
+                            <span class="stat__value">12</span>
+                            <span class="stat__label">Days Active</span>
                         </div>
                     </div>
 
-                    <div class="profile-subscription">
-                        <div class="subscription-badge basic">
+                    <div class="profile__subscription">
+                        <div class="subscription__badge basic">
                             Basic Plan
                         </div>
-                        <a href="subscribe.html" class="upgrade-button">Upgrade to Pro</a>
+                        <a href="subscribe.html" class="upgrade__button">Upgrade to Pro</a>
                     </div>
                 </div>
 
-                <div class="profile-content">
-                    <div class="profile-section">
-                        <h2 class="section-title">Personal Information</h2>
-                        <div class="profile-info">
-                            <div class="info-group">
-                                <label class="info-label">Name</label>
-                                <div class="info-value">Rock Griffe</div>
+                <div class="profile__content">
+                    <div class="profile__section">
+                        <h2 class="section__title">Personal Information</h2>
+                        <div class="profile__info">
+                            <div class="info__group">
+                                <label class="info__label">Name</label>
+                                <div class="info__value">Rock Griffe</div>
                             </div>
-                            <div class="info-group">
-                                <label class="info-label">Birth Date</label>
-                                <div class="info-value">01/12/1994</div>
+                            <div class="info__group">
+                                <label class="info__label">Birth Date</label>
+                                <div class="info__value">01/12/1994</div>
                             </div>
-                            <div class="info-group">
-                                <label class="info-label">Gender</label>
-                                <div class="info-value">Male</div>
+                            <div class="info__group">
+                                <label class="info__label">Gender</label>
+                                <div class="info__value">Male</div>
                             </div>
-                            <div class="info-group">
-                                <label class="info-label">Email</label>
-                                <div class="info-value">rock.griffe@example.com</div>
-                            </div>
-                        </div>
-                        <button class="edit-button">Edit Information</button>
-                    </div>
-
-                    <div class="profile-section">
-                        <h2 class="section-title">Subscription Details</h2>
-                        <div class="profile-info">
-                            <div class="info-group">
-                                <label class="info-label">Current Plan</label>
-                                <div class="info-value">Basic</div>
-                            </div>
-                            <div class="info-group">
-                                <label class="info-label">Billing Cycle</label>
-                                <div class="info-value">Monthly</div>
-                            </div>
-                            <div class="info-group">
-                                <label class="info-label">Next Billing Date</label>
-                                <div class="info-value">August 15, 2025</div>
-                            </div>
-                            <div class="info-group">
-                                <label class="info-label">Daily Questions</label>
-                                <div class="info-value">5 questions per day</div>
+                            <div class="info__group">
+                                <label class="info__label">Email</label>
+                                <div class="info__value">rock.griffe@example.com</div>
                             </div>
                         </div>
+                        <button class="edit__button">Edit Information</button>
                     </div>
 
-                    <div class="profile-section">
-                        <h2 class="section-title">Account Management</h2>
-                        <div class="account-actions">
-                            <button class="action-button change-password">Change Password</button>
-                            <button class="action-button delete-account">Delete My Account</button>
+                    <div class="profile__section">
+                        <h2 class="section__title">Subscription Details</h2>
+                        <div class="profile__info">
+                            <div class="info__group">
+                                <label class="info__label">Current Plan</label>
+                                <div class="info__value">Basic</div>
+                            </div>
+                            <div class="info__group">
+                                <label class="info__label">Billing Cycle</label>
+                                <div class="info__value">Monthly</div>
+                            </div>
+                            <div class="info__group">
+                                <label class="info__label">Next Billing Date</label>
+                                <div class="info__value">August 15, 2025</div>
+                            </div>
+                            <div class="info__group">
+                                <label class="info__label">Daily Questions</label>
+                                <div class="info__value">5 questions per day</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile__section">
+                        <h2 class="section__title">Account Management</h2>
+                        <div class="account__actions">
+                            <button class="action__button change__password">Change Password</button>
+                            <button class="action__button delete__account">Delete My Account</button>
                         </div>
                     </div>
                 </div>
@@ -126,10 +128,11 @@
         </div>
     </main>
 
+ <!-- #region Footer -->
     <footer class="footer2">
-        <div class="footer2-top">
-            <div class="footer2-cols">
-                <div class="footer2-col">
+        <div class="footer2__top">
+            <div class="footer2__cols">
+                <div class="footer2__col">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#">Landing Page</a></li>
@@ -139,7 +142,7 @@
                         <li><a href="#">Integrations</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Use Cases</h4>
                     <ul>
                         <li><a href="#">Web-designers</a></li>
@@ -148,7 +151,7 @@
                         <li><a href="#">Website Builder</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="#">Academy</a></li>
@@ -156,7 +159,7 @@
                         <li><a href="#">Themes</a></li>
                     </ul>
                 </div>
-                <div class="footer2-col">
+                <div class="footer2__col">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -167,9 +170,9 @@
                 </div>
             </div>
         </div>
-        <hr class="footer2-divider">
-        <div class="footer2-bottom">
-            <ul class="footer2-links">
+        <hr class="footer2__divider">
+        <div class="footer2__bottom">
+            <ul class="footer2__links">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Sales and Refunds</a></li>
@@ -177,6 +180,7 @@
             </ul>
         </div>
     </footer>
+    <!-- #endregion -->
 
     <script src="src/js/script.js"></script>
 </body>

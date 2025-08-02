@@ -1,6 +1,6 @@
 @import url(./components/root.css);
 
-.subscribe-section {
+.subscribe__section {
     margin: 90px auto 0 auto;
     max-width: 440px;
     background: #fff;
@@ -10,7 +10,7 @@
     text-align: center;
     animation: fadeInUp 1s;
 }
-.subscribe-section h2 {
+.subscribe__section h2 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #9CA982;
@@ -19,14 +19,14 @@
     letter-spacing: 0.02em;
     animation: fadeIn 1.2s;
 }
-.subscribe-form {
+.subscribe__form {
     display: flex;
     flex-direction: column;
     gap: 22px;
     margin-bottom: 18px;
     animation: scaleIn 0.8s;
 }
-.subscribe-form label {
+.subscribe__form label {
     text-align: left;
     color: #9CA982;
     font-weight: 600;
@@ -35,10 +35,10 @@
     letter-spacing: 0.01em;
     animation: fadeIn 1.1s;
 }
-.subscribe-form input,
-.subscribe-form select {
+.subscribe__form input,
+.subscribe__form select {
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1.5px solid #eae4c8;
     font-size: 1.08rem;
     background: #f8f6ec;
@@ -46,14 +46,14 @@
     transition: border 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(156,169,130,0.07);
 }
-.subscribe-form input:focus,
-.subscribe-form select:focus {
+.subscribe__form input:focus,
+.subscribe__form select:focus {
     border: 1.5px solid #9CA982;
     outline: none;
     box-shadow: 0 4px 16px rgba(156,169,130,0.12);
     background: #fff;
 }
-.subscribe-form button {
+.subscribe__form button {
     background: linear-gradient(90deg,#9CA982 0%,#1a1a1a 100%);
     color: #fff;
     border: none;
@@ -66,12 +66,12 @@
     margin-top: 8px;
     transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
-.subscribe-form button:hover {
+.subscribe__form button:hover {
     background: linear-gradient(90deg,#1a1a1a 0%,#9CA982 100%);
     box-shadow: 0 8px 32px rgba(156,169,130,0.16);
     transform: translateY(-2px) scale(1.03);
 }
-.subscribe-note {
+.subscribe__note {
     margin-top: 22px;
     color: #888;
     font-size: 1.12rem;
@@ -94,20 +94,39 @@
 
 /* --- Responsive --- */
 @media (max-width: 700px) {
-    .subscribe-section {
-          margin: 40px auto;
-        
-        width: 90%;
-        
+    .subscribe__section {
+        margin: 30px 0 0 0;
+        max-width: 90%;
+        margin:20px;
+        border-radius: 0;
+        box-shadow: none;
     }
-    .subscribe-section h2 {
-        font-size: 1.3rem;
+    .subscribe__form {
+        gap: 16px;
     }
-    .subscribe-form button {
+    .subscribe__form label {
+        font-size: 1rem;
+    }
+    .subscribe__form input,
+    .subscribe__form select {
+        padding: 14px;
+        font-size: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .subscribe__form button {
         font-size: 1rem;
         padding: 14px 0;
+        width: 100%;
     }
-    .subscribe-note {
+    .subscribe__section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+    .subscribe__note {
         font-size: 1rem;
+        margin-top: 16px;
     }
 }
