@@ -21,7 +21,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; 
     padding: 0 32px;
 }
 .navbar__logo {
@@ -118,6 +118,7 @@
 @media (max-width: 900px) {
     .navbar__inner {
         padding: 0 10px;
+        justify-content: space-between;
     }
     .navbar__mobile__toggle {
         display: flex;
