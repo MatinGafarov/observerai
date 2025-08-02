@@ -96,6 +96,7 @@
         padding: 24px 8px 18px 8px;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 60px; 
         box-sizing: border-box;
     }
     .contact__title {
