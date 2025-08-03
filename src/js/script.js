@@ -223,3 +223,67 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('.otp__input');
+    
+    // Auto-focus and move to next input
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', function() {
+            if (this.value.length === this.maxLength) {
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            }
+        });
+        
+        // Handle backspace
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Backspace' && !this.value && index > 0) {
+                inputs[index - 1].focus();
+            }
+        });
+        
+        // Handle paste
+        input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text').trim();
+            
+            if (!/^\d+$/.test(pasteData)) return; // Only allow digits
+            
+            const digits = pasteData.split('');
+            
+            inputs.forEach((input, i) => {
+                if (i < digits.length) {
+                    input.value = digits[i];
+                    if (i < inputs.length - 1) {
+                        inputs[i + 1].focus();
+                    }
+                }
+            });
+        });
+    });
+    
+    // Form submission
+    document.querySelector('.otp__form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let otp = '';
+        inputs.forEach(input => {
+            otp += input.value;
+        });
+        
+        // Here you would typically send the OTP to your server for verification
+        console.log('OTP submitted:', otp);
+        
+        // For demo purposes, redirect to profile page after 1 second
+        setTimeout(() => {
+            window.location.href = 'profile.html';
+        }, 1000);
+    });
+});
+     // OTP yönləndirməsi üçün
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        window.location.href = 'otp.html';
+    });
