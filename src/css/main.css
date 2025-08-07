@@ -605,6 +605,7 @@
 .faq__answer p {
     margin-top: 0;
     line-height: 1.6;
+    color:#000;
 }
 
 .faq__answer ul {
@@ -614,6 +615,7 @@
 .faq__answer li {
     margin-bottom: 0.5rem;
     line-height: 1.5;
+    color:#000;
 }
 
 /* --- Responsive --- */

@@ -231,12 +231,50 @@
 /* Buttons */
 .edit__button,
 .action__button {
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: 10px 20px;
     border: none;
     border-radius: var(--border-radius);
     font-weight: 500;
+    font-size: 0.95rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    flex: 1;
+    min-width: 130px;
+    text-align: center;
+}
+
+.action__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.change__password {
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+}
+
+.change__password:hover {
+    background-color: #e0e0e0;
+}
+
+.delete__account {
+    background-color: #fff2f2;
+    color: #d32f2f;
+}
+
+.delete__account:hover {
+    background-color: #ffebeb;
+}
+
+.talk__leaders {
+    background-color: #eae4c8;
+    color: #232c23;
+}
+
+.talk__leaders:hover {
+    background-color: #9CA982;
+    color: #fff;
 }
 
 .edit__button {

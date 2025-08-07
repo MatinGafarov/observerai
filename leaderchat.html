@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leader Chat | ObserverAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/leaderchat.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__inner">
+            <div class="navbar__mobile__toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar__links" id="navbarLinks">
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="explore.html">Explore Leaders & Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="chat.html">Chat With AI</a></li>
+                <li class="navbar__profile">
+                    <a href="profile.html">
+                        <img src="src/assets/images/profile svg.svg" alt="Profile" class="profile__icon">
+                    </a>
+                </li>
+                <li class="navbar__auth"><a href="login.html">Login</a></li>
+                <li class="navbar__auth"><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="leaderchat__container fade-in">
+            <aside class="leaderchat__sidebar">
+                <h3>Leaders</h3>
+                <ul id="leaderList">
+                    <!-- Leader list will be populated by JS -->
+                </ul>
+            </aside>
+            <section class="leaderchat__main" id="leaderMain">
+                <!-- Leader chat content will be injected here -->
+            </section>
+        </div>
+    </main>
+    <footer class="footer2">
+        <div class="footer2__top">
+            <div class="footer2__cols">
+                <div class="footer2__col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Popup Builder</a></li>
+                        <li><a href="#">Web-design</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer2__col">
+                    <h4>Use Cases</h4>
+                    <ul>
+                        <li><a href="#">Web-designers</a></li>
+                        <li><a href="#">Marketers</a></li>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                    </ul>
+                </div>
+                <div class="footer2__col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Themes</a></li>
+                    </ul>
+                </div>
+                <div class="footer2__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="footer2__divider">
+        <div class="footer2__bottom">
+            <ul class="footer2__links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
