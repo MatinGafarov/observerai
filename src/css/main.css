@@ -594,12 +594,16 @@
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
     padding: 0 0;
+    color:#000;
+
 }
 
 .faq__question[aria-expanded="true"]+.faq__answer {
     max-height: 500px;
     padding-bottom: 1.5rem;
     animation: fadeIn 0.8s ease-out;
+    color:#000;
+
 }
 
 .faq__answer p {
